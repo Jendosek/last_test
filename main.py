@@ -1,10 +1,19 @@
-#10
-class Student:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+#11
+class BankAccount:
+    def __init__(self,  account_number, balance):
+        self.account_number = account_number
+        self.balance = balance
+    def deposit(self):
+        self.balance += 200
+    def withdraw(self):
+        self.balance -= 100
 
-get_info = Student(name = "Zhenia", age=16)
-print(f"Ім'я студента: {get_info.name}")
-print(f"Вік студента: {get_info.age}")
+get_info = BankAccount(account_number = "nsdh3nfs521gmd3", balance = 1000)
+print(f"Ім'я банка: {get_info.account_number}")
+print(f"Початковий баланс: {get_info.balance}")
+
+get_info.deposit()
+get_info.withdraw()
+
+print(f"Кінцевий баланс: {get_info.balance}")
 
