@@ -1,6 +1,14 @@
-#6
-a = int(input("Введіть перше число діапазону: "))
-b = int(input("Введіть друге число діапазону: "))
-for i in range(a, b+1):
-    if i % 2 == 0:
-        print(i, end=" ")
+#7
+dict = {}
+b = ''
+while b != "q":
+    key = input(f"Введіть ім'я студента: ")
+    value = input(f"Введіть оцінку з математики: ")
+    dict[key] = value
+    a = max(value)
+    b = input("Для виходу натисніть q ")
+    print()
+    print(dict)
+    print(f"Максимальне значення зі словника: {a}")
+    print()
+    continue
