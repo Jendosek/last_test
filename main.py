@@ -1,4 +1,5 @@
-#3
-for i in range(1,101):
-    if i % 2 == 0:
-        print(i, end=" ")
+#4
+word = input("Введіть слово: ")
+print("Результат: ")
+for i in word:
+    print(i)
