@@ -1,10 +1,6 @@
-#5
-def string(s):
-    s = s.lower()
-    s = s.replace(" ", "")
-    if s == s[::-1]:
-        print("Слово - паліндром")
-    else:
-        print("Не є паліндромом")
-s1 = input("Введіть рядок: ")
-string(s1)
+#6
+a = int(input("Введіть перше число діапазону: "))
+b = int(input("Введіть друге число діапазону: "))
+for i in range(a, b+1):
+    if i % 2 == 0:
+        print(i, end=" ")
