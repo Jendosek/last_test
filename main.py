@@ -1,14 +1,11 @@
-#7
-dict = {}
-b = ''
-while b != "q":
-    key = input(f"Введіть ім'я студента: ")
-    value = input(f"Введіть оцінку з математики: ")
-    dict[key] = value
-    a = max(value)
-    b = input("Для виходу натисніть q ")
-    print()
-    print(dict)
-    print(f"Максимальне значення зі словника: {a}")
-    print()
-    continue
+#8
+def sort(strings):
+    b = []
+    for string in strings:
+        if string[0].capitalize():
+            b.append(string)
+    return b
+words = input("Введіть рядок: ").split(' ')
+res = sort(words)
+print(res)
+
