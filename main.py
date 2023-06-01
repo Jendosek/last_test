@@ -1,7 +1,4 @@
-#2
-a = int(input("Введіть перше число діапазону: "))
-b = int(input("Введіть друге число діапазону: "))
-summ = 0
-for i in range(a, b+1):
-    summ += i
-print(f"Сума чисел в діапазоні становить: {summ}")
+#3
+for i in range(1,101):
+    if i % 2 == 0:
+        print(i, end=" ")
