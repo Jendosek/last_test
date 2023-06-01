@@ -1,16 +1,19 @@
-# This is a sample Python script.
+#11
+class BankAccount:
+    def __init__(self,  account_number, balance):
+        self.account_number = account_number
+        self.balance = balance
+    def deposit(self):
+        self.balance += 200
+    def withdraw(self):
+        self.balance -= 100
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+get_info = BankAccount(account_number = "nsdh3nfs521gmd3", balance = 1000)
+print(f"Ім'я банка: {get_info.account_number}")
+print(f"Початковий баланс: {get_info.balance}")
 
+get_info.deposit()
+get_info.withdraw()
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+print(f"Кінцевий баланс: {get_info.balance}")
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
